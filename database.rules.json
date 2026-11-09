@@ -1,0 +1,13 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    "wishes": {
+      ".read": true,
+      "$wishId": {
+        ".write": "!data.exists() && root.child('wishes').numChildren() < 500",
+        ".validate": "newData.numChildren() == 5 && newData.hasChildren(['id', 'name', 'text', 'ts', 'date']) && newData.child('id').isString() && newData.child('id').val() == $wishId && newData.child('name').isString() && newData.child('name').val().length <= 40 && newData.child('text').isString() && newData.child('text').val().length <= 200 && newData.child('ts').isNumber() && newData.child('date').isString() && newData.child('date').val().length <= 30"
+      }
+    }
+  }
+}
