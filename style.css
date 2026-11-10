@@ -380,8 +380,8 @@
 
         .mapbox {
             width: 100%;
-            max-width: 520px;
-            height: 200px;
+            max-width: 560px;
+            height: 320px;
             border: 1px solid var(--gold);
             border-radius: 6px;
             margin: 10px auto 4px;
@@ -389,7 +389,7 @@
         }
 
         .loccard .mapbox {
-            height: 160px;
+            height: 280px;
         }
 
         .countdown {
